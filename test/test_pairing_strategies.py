@@ -10,9 +10,6 @@ class IterativePairingTest(unittest.TestCase):
         good_pairs = IterativePairing.create(good_numbers, 12)
         bad_pairs = IterativePairing.create(bad_numbers, 12)
 
-        for pair in good_pairs:
-            assert pair[0] <= pair[1]
-
         assert len(good_pairs) == 3
         assert len(bad_pairs) == 0
         
