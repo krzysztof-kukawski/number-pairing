@@ -20,7 +20,7 @@ class IterativePairing(PairingStrategy):
             complement = target - number
 
             if complement in numbers_seen:
-                pair = tuple(pair)
+                pair = (complement, number)
                 pairs.append(pair)
 
             numbers_seen.add(number)
