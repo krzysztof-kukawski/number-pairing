@@ -9,6 +9,3 @@ class Pairs:
 
     def create(self, strategy: PairingStrategy, target) -> list[tuple]:
         return strategy.create(self.input_numbers, target)
-
-
-

@@ -17,7 +17,7 @@ class TxtFileReader(FileReader):
         with open(path) as file:
             text = file.read()
 
-            numbers = re.findall(r'\d+', text)
+            numbers = re.findall(r"\d+", text)
             numbers = [int(i) for i in numbers]
 
             return numbers
