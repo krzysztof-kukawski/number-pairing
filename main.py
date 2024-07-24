@@ -4,7 +4,9 @@ from pairing_strategies import IterativePairing
 from readers import TxtFileReader
 from writers import TxtFileWriter
 
-input_path = os.path.dirname(__file__) + r"\input.txt"
+directory = os.path.dirname(__file__)
+input_path = os.path.join(directory, "input.txt")
+
 pairs = Pairs(TxtFileReader, input_path)
 found_pairs = pairs.create(IterativePairing, 12)
 
