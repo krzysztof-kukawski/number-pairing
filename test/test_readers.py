@@ -1,6 +1,6 @@
 import unittest
 import os
-from src.readers import TxtFileReader
+from readers import TxtFileReader
 
 class TxtFileReaderTest(unittest.TestCase):
     def test_read(self):
