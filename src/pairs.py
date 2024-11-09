@@ -1,5 +1,5 @@
-from readers import FileReader
-from pairing_strategies import PairingStrategy
+from src.readers import FileReader
+from src.pairing_strategies import PairingStrategy
 
 
 class Pairs:
