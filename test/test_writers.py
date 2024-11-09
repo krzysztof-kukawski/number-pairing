@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import mock_open, patch
-from writers import TxtFileWriter
+from src.writers import TxtFileWriter
 
 
 class TxtFileWriterTest(unittest.TestCase):
