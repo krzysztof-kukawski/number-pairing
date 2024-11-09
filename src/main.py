@@ -1,8 +1,8 @@
 import os
-from pairs import Pairs
-from pairing_strategies import IterativePairing
-from readers import TxtFileReader
-from writers import TxtFileWriter
+from src.pairs import Pairs
+from src.pairing_strategies import IterativePairing
+from src.readers import TxtFileReader
+from src.writers import TxtFileWriter
 
 directory = os.path.dirname(__file__)
 input_path = os.path.join(directory, "input.txt")
