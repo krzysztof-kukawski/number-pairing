@@ -1,5 +1,5 @@
 import unittest
-from pairing_strategies import IterativePairing
+from src.pairing_strategies import IterativePairing
 
 
 class IterativePairingTest(unittest.TestCase):
