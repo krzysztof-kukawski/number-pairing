@@ -1,4 +1,5 @@
 import unittest
+import os
 from unittest.mock import mock_open, patch
 from src.writers import TxtFileWriter
 
@@ -9,8 +10,8 @@ class TxtFileWriterTest(unittest.TestCase):
         test_input = [1, 2, 3]
 
         TxtFileWriter.write(test_input)
-
-        mock_open.assert_called_once_with("Output.txt", "w")
+        output_path = os.path.join("data", "output.txt")
+        mock_open.assert_called_once_with(output_path, "w")
 
 
 if __name__ == "__main__":

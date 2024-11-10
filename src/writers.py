@@ -1,3 +1,4 @@
+import os
 from abc import abstractmethod, ABC
 
 
@@ -13,5 +14,6 @@ class TxtFileWriter(FileWriter):
 
     @staticmethod
     def write(output: list):
-        with open("Output.txt", "w") as text_file:
+        output_path = os.path.join("data", "output.txt")
+        with open(output_path, "w") as text_file:
             print(output, file=text_file)
